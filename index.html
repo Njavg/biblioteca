@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Biblioteca de Libros</title>
+  <link rel="stylesheet" href="biblioteca.css" />
+</head>
+<body>
+  <header>
+    <h1>Mi Biblioteca</h1>
+    <button id="btnNuevoLibro">Nuevo Libro</button>
+  </header>
+
+  <main>
+    <section id="listaLibros"></section>
+  </main>
+
+  <dialog id="formDialog">
+    <form id="formLibro">
+      <h2>Nuevo Libro</h2>
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" name="titulo" required />
+
+      <label for="autor">Autor:</label>
+      <input type="text" id="autor" name="autor" required />
+
+      <label for="paginas">Número de páginas:</label>
+      <input type="number" id="paginas" name="paginas" min="1" required />
+
+      <label for="leido">Leído:</label>
+      <input type="checkbox" id="leido" name="leido" />
+
+      <div class="buttons">
+        <button type="submit">Añadir Libro</button>
+        <button type="button" id="btnCancelar">Cancelar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="biblioteca.js"></script>
+</body>
+</html>
